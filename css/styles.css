@@ -1,171 +1,169 @@
-body{
-    font-family: 'Raleway', sans-serif;
-    
-    background: #F4F6F5;
+body {
+  font-family: "Raleway", sans-serif;
+
+  background: #f4f6f5;
 }
-a{
-    text-decoration: none;
+a {
+  text-decoration: none;
 }
-ul{
-    list-style: none;
+ul {
+  list-style: none;
 }
-button{
-    cursor: pointer;
+button {
+  cursor: pointer;
 }
-            /* <!-- -------------header------------- --> */
+h1 ,h2, h3, h4, h5, p{
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+img {
+  display: block;
+}
+.container {
+  max-width: 1110px;
+  width: 100%;
+  margin: 0 auto;
+}
+/* <!-- -------------header------------- --> */
 .header {
-    background: #E1EDE6;
-    display: flex;
-    justify-content: space-around;
+  background: #e1ede6;
+  display: flex;
+  justify-content: space-around;
 }
 .header-logo {
-    color: #598D66;
-    font-size: 20px;
-    font-weight: 700;
-    line-height: normal;
-    display:flex;
-    align-items: center;
-   
+  color: #598d66;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: normal;
+  display: flex;
+  align-items: center;
 }
 .header-logo-img {
-    width: 35px; height: 35px;
+  width: 35px;
+  height: 35px;
 }
 .header-navigation {
-    
 }
 .header-list {
-    display: flex;
-    justify-content:flex-end;
+  display: flex;
+  justify-content: flex-end;
 }
 .header-list-item {
 }
 .header-list-link {
-    color: #2C2D35;
-    font-size: 20px;
-    font-weight: 500;
-    line-height: normal;
-    padding-right: 60px;
+  color: #2c2d35;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: normal;
+  padding-right: 60px;
 }
-            /* <!-- -------------header------------- --> */
-          /* <!-- -------------booking------------- --> */
+/* <!-- -------------header------------- --> */
+/* <!-- -------------booking------------- --> */
 .booking {
-    display: flex;
-    justify-content:center;
-    align-items:center;
-    margin: 0 165 0 165;
-    
-    
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 165 0 165;
 }
 .booking-img {
 }
 .booking-title {
-    color: #2C2D35;
-    font-size: 60px;
-    font-weight: 500;
-    line-height: 1.1;
-    margin-bottom: 20px;
-    
-    
+  color: #2c2d35;
+  font-size: 60px;
+  font-weight: 500;
+  line-height: 1.1;
+  margin-bottom: 20px;
 }
 .booking-text {
-     margin-bottom: 60px;
-     color: #86928B;
-    font-size: 18px;
-    font-weight: 500;
-    line-height: 1.5;
+  margin-bottom: 60px;
+  color: #86928b;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.5;
 }
 .booking-btn {
-    color: #598D66;
-    font-family: Raleway;
-    font-size: 20px;
-    font-weight: 500;
-    line-height: normal;
-    border: 1px solid #598D66;
-    display: inline-flex;
-    padding: 20px 60px;
-    justify-content: center;
-    align-items: center;
-    gap: 6px;
-    flex-shrink: 0;
-    
-   
-   
-    
+  color: #598d66;
+  font-family: Raleway;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: normal;
+  border: 1px solid #598d66;
+  display: inline-flex;
+  padding: 20px 60px;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  flex-shrink: 0;
 }
 .booking-title-green {
-    color: #598D66;
+  color: #598d66;
 }
 .booking-section-text {
-    display: flex;
-    flex-direction: column;
-    justify-content:flex-end;
-    margin-left: 30px;
-    
-    
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  margin-left: 30px;
 }
-          /* <!-- -------------booking------------- --> */
-          /* <!-- -------------products------------- --> */
+/* <!-- -------------booking------------- --> */
+/* <!-- -------------products------------- --> */
 .products {
 }
-.conteiner{
-    display: flex;
-    justify-content: space-around;
-    
-    
-
-
+.products-country {
+  display: flex;
+  align-items: baseline;
 }
+
 .products-title {
-    color: #2C2D35;
-    font-size: 40px;
-    font-weight: 500;
-    line-height: 1.1;
+  color: #2c2d35;
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 1.1;
+  flex-grow: 1;
 }
 .products-list {
-    display: flex;
-    align-items: flex-start;
-    margin-top: 70px;
-
+  display: flex;
+  gap: 32px;
 }
 .products-list-item {
-    
-    
-    
 }
-.products-list-btn {
-    color: #2C2D35;
-    font-family: Raleway;
-    font-size: 20px;
-    font-weight: 500;
-    line-height: normal;
-    margin: 0 32px 0 32px;
-    
-    
+.products-list-link {
+  color: #2c2d35;
+  font-family: Raleway;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: normal;
+  padding: 10px 20px;
+  border-radius: 20px;
+  background-color: #d4e8d9;
+  cursor: pointer;
+}
+.products-list-link:default {
+  background-color: #d4e8d9;
+}
+.products-list-link:hover {
+  background-color: #598d66;
+}
+.products-list-link:focus {
+  background-color: #d4e8d9;
+}
+.products-list-link:active {
+  background-color: #376b44;
 }
 .products-list-book {
-   
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+  
+  
 }
 .products-item-list {
-    margin-right: 30px;
-    margin-bottom: 30px;
-    background: #E1EDE6;
-    padding: 20px;
-   
+  background: #e1ede6;
+  width: calc((100% - 64px) / 3);
+  padding: 20px;
 }
 .products-img {
-}
-.products-text {
-}
-.products-title-text {
-}
-.products-text-item {
-}
-.products-price {
-}
-.products-btn {
-}          
-.wrapper{
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
+ 
+  
 }
