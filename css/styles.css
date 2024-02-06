@@ -23,6 +23,7 @@ img {
   max-width: 1110px;
   width: 100%;
   margin: 0 auto;
+  
 }
 /* <!-- -------------header------------- --> */
 .header {
@@ -63,7 +64,6 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0 165 0 165;
 }
 .booking-img {
 }
@@ -102,7 +102,7 @@ img {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  margin-left: 30px;
+  
 }
 /* <!-- -------------booking------------- --> */
 /* <!-- -------------products------------- --> */
