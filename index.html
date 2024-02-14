@@ -2,6 +2,13 @@
 <html lang="ru">
 
 <head>
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="theme-color" content="#ffffff">
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
@@ -16,50 +23,63 @@
 
 <body>
   <header class="header">
-    <a class="header-logo" href="./index.html"><img class="header-logo-img" src="./img/Star 1.png" alt="" />Ink.
-      House</a>
-    <nav class="header-navigation">
-      <ul class="header-list">
-        <li class="header-list-item">
-          <a class="header-list-link" href="">Репродукции</a>
-        </li>
-        <li class="header-list-item">
-          <a class="header-list-link" href="">Новинки</a>
-        </li>
-        <li class="header-list-item">
-          <a class="header-list-link" href="">О нас</a>
-        </li>
-        <li class="header-list-item">
-          <a class="headerlist-link" href=""><img src="./img/shopping-cart.png" alt="cleave" /></a>
-        </li>
-      </ul>
-    </nav>
+    <div class="header-container container">
+      <a href="/index.html" class="header-logo-link">
+        <svg width="35" height="35" class="header-icons">
+          <use href="./img/icon-ink.svg#iconlogo-ink"></use>
+        </svg>
+        Ink. House</a>
+      <nav class="header-navigation">
+        <ul class="header-menu">
+          <li class="header-menu-list">
+            <a href="" class="header-menu-link">Репродукції</a>
+          </li>
+          <li class="header-menu-list">
+            <a href="" class="header-menu-link">Новинки</a>
+          </li>
+          <li class="header-menu-list">
+            <a href="" class="header-menu-link">Про нас</a>
+          </li>
+          <li class="header-menu-list header-menu-list-buy">
+            <a href="./index.html" class="header-menu-link">
+              <svg class="header-menu-icon" width="22" height="16">
+                <use href="./img/icon-ink.svg#iconto-buy"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+
+
   </header>
   <!-- -------------header------------- -->
   <!-- -------------booking------------- -->
   <main class="main">
-    <section class="booking">
+    <section class="booking container">
       <img class="booking-img" width="540" height="621" src="./img/Layer 0 1.jpg" alt="dove" />
       <div class="booking-section-text">
         <h1 class="booking-title">
-          Реплики картин</br> от
+          Репліки картин
+          від </br> от
           <span class="booking-title-green">Ink. House</span>
         </h1>
         <p class="booking-text">
-          Высокое качество отрисовки на плотной бумаге или льняном</br> холсте.
-          Редкие произведения, доступные цены.
+          Висока якість малювання на щільному папері або лляному
+          полотні. Рідкісні твори, доступні ціни.
         </p>
-        <button class="booking-btn" type="button">Продукция</button>
+        <button class="booking-btn" type="button">Продукція</button>
       </div>
     </section>
-    <section class="products ">
+    <section class="products container">
       <div class="container">
         <div class="products-country">
-          <h2 class="products-title">Репродукции</h2>
+          <h2 class="products-title">Репродукції</h2>
           <ul class="products-list">
-            <li class="products-list-item"><a class="products-list-link" href="">Франция</a></li>
-            <li class="products-list-item"><a class="products-list-link" href="">Германия</a></li>
-            <li class="products-list-item"><a class="products-list-link" href="">Англия</a></li>
+            <li class="products-list-item"><a class="products-list-link" href="">Франція</a></li>
+            <li class="products-list-item"><a class="products-list-link" href="">Германія</a></li>
+            <li class="products-list-item"><a class="products-list-link" href="">Англія</a></li>
           </ul>
         </div>
         <ul class="products-list-book">
@@ -69,15 +89,15 @@
             <h3 class="products-title-text">Охота Амура</h3>
             <p class="products-text-item">Холст, масло (50х80) </p>
             <p class="products-price">14 500 руб</p>
-            <button class="products-btn" type="button">В корзину</button>
+            <button class="products-btn" type="button">В кошик</button>
           </li>
           <li class="products-item-list">
             <img class="products-img" src="./img/damazdok.jpg" width="310" height="422" alt="">
             <p class="products-text">Анри Селин</p>
-            <h3 class="products-title-text">Дама с собачкой</h3>
+            <h3 class="products-title-text">Дама с собачкою</h3>
             <p class="products-text-item">Акрил, бумага (50х80) </p>
-            <p class="products-price">16 500 руб</p>
-            <button class="products-btn" type="button">В корзину</button>
+            <p class="products-price">16 500 грн</p>
+            <button class="products-btn" type="button">В кошик</button>
           </li>
           <li class="products-item-list">
             <img class="products-img" src="./img/procedura.jpg" width="310" height="422" alt="">
@@ -85,7 +105,7 @@
             <h3 class="products-title-text">Процедура</h3>
             <p class="products-text-item">Цветная литография (40х60) </p>
             <p class="products-price">20 000 руб</p>
-            <button class="products-btn" type="button">В корзину</button>
+            <button class="products-btn" type="button">В кошик</button>
           </li>
           <li class="products-item-list">
             <img class="products-img" src="./img/roza.jpg" width="310" height="422" alt="">
@@ -93,7 +113,7 @@
             <h3 class="products-title-text">Роза</h3>
             <p class="products-text-item">Бумага, акрил (50х80) </p>
             <p class="products-price">12 000 руб</p>
-            <button class="products-btn" type="button">В корзину</button>
+            <button class="products-btn" type="button">В кошик</button>
           </li>
           <li class="products-item-list">
             <img class="products-img" src="./img/ptichyatrapeza.jpg" width="310" height="422" alt="">
@@ -101,7 +121,7 @@
             <h3 class="products-title-text">Птичья трапеза</h3>
             <p class="products-text-item">Цветная литография (40х60) </p>
             <p class="products-price">22 500 руб</p>
-            <button class="products-btn" type="button">В корзину</button>
+            <button class="products-btn" type="button">В кошик</button>
           </li>
           <li class="products-item-list">
             <img class="products-img" src="./img/peyzajzroboy.jpg" width="310" height="422" alt="">
@@ -109,9 +129,25 @@
             <h3 class="products-title-text">Пейзаж с рыбой</h3>
             <p class="products-text-item">Цветная литография (40х60) </p>
             <p class="products-price">20 000 руб</p>
-            <button class="products-btn" type="button">В корзину</button>
+            <button class="products-btn" type="button">В кошик</button>
           </li>
         </ul>
+      </div>
+    </section>
+    <section class="history-section">
+      <div class="history container">
+        <div class="history-wrap-title">
+          <svg class="history-icons" width="80" height="80">
+            <use href="./img/icon-ink.svg#iconicon-section"></use>
+          </svg>
+          <h1 class="history-title">Нова колекція французьких авторів</h1>
+        </div>
+        <p class="history-text">Важко сказати, чому акціонери найбільших компаній закликають нас до нових звершень, які,
+          своєю чергою, мають бути
+          заблоковані у межах своїх власних раціональних обмежень.
+          Зважаючи на показники успішності, межа навчання кадрів визначає високу затребуваність напрямків прогресивного
+          розвитку.</p>
+        <button class="history-btn">Ознайомитись</button>
       </div>
     </section>
   </main>
